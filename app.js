@@ -1,53 +1,55 @@
 let Total = 0;
-let finalAction;
+let finalAction = "";
+let number1 = 0;
+let number2 = 0;
 
 function seven() {
     let Num = document.getElementById("txtNum").value;
-    if(Num==""){
-        document.getElementById("txtNum").value="7";
+    if (Num == "") {
+        document.getElementById("txtNum").value = "7";
     }
-    else{
-        document.getElementById("txtNum").value=Num+"7";
+    else {
+        document.getElementById("txtNum").value = Num + "7";
     }
 }
 
 function eight() {
     let Num = document.getElementById("txtNum").value;
-    if(Num==""){
-        document.getElementById("txtNum").value="8";
+    if (Num == "") {
+        document.getElementById("txtNum").value = "8";
     }
-    else{
-        document.getElementById("txtNum").value=Num+"8";
+    else {
+        document.getElementById("txtNum").value = Num + "8";
     }
 }
 
 function nine() {
     let Num = document.getElementById("txtNum").value;
-    if(Num==""){
-        document.getElementById("txtNum").value="9";
+    if (Num == "") {
+        document.getElementById("txtNum").value = "9";
     }
-    else{
-        document.getElementById("txtNum").value=Num+"9";
+    else {
+        document.getElementById("txtNum").value = Num + "9";
     }
 }
 
 function fore() {
     let Num = document.getElementById("txtNum").value;
-    if(Num==""){
-        document.getElementById("txtNum").value="4";
+    if (Num == "") {
+        document.getElementById("txtNum").value = "4";
     }
-    else{
-        document.getElementById("txtNum").value=Num+"4";
+    else {
+        document.getElementById("txtNum").value = Num + "4";
     }
 }
 
 function five() {
     let Num = document.getElementById("txtNum").value;
-    if (Num=="") {
+    if (Num == "") {
         document.getElementById("txtNum").value = "5";
     }
     else {
-        document.getElementById("txtNum").value=Num+"5";
+        document.getElementById("txtNum").value = Num + "5";
     }
 }
 
@@ -57,7 +59,7 @@ function six() {
         document.getElementById("txtNum").value = "6";
     }
     else {
-        document.getElementById("txtNum").value=Num+"6";
+        document.getElementById("txtNum").value = Num + "6";
     }
 }
 
@@ -67,7 +69,7 @@ function one() {
         document.getElementById("txtNum").value = "1";
     }
     else {
-        document.getElementById("txtNum").value=Num+"1";
+        document.getElementById("txtNum").value = Num + "1";
     }
 }
 
@@ -77,7 +79,7 @@ function two() {
         document.getElementById("txtNum").value = "2";
     }
     else {
-        document.getElementById("txtNum").value=Num+"2";
+        document.getElementById("txtNum").value = Num + "2";
     }
 }
 
@@ -87,7 +89,7 @@ function three() {
         document.getElementById("txtNum").value = "3";
     }
     else {
-        document.getElementById("txtNum").value=Num+"3";
+        document.getElementById("txtNum").value = Num + "3";
     }
 }
 
@@ -97,7 +99,7 @@ function zero() {
         document.getElementById("txtNum").value = "0";
     }
     else {
-        document.getElementById("txtNum").value=Num+"0";
+        document.getElementById("txtNum").value = Num + "0";
     }
 }
 
@@ -107,81 +109,98 @@ function dote() {
         document.getElementById("txtNum").value = ".";
     }
     else {
-        document.getElementById("txtNum").value=Num+".";
+        document.getElementById("txtNum").value = Num + ".";
     }
 }
 
 function Clear() {
-    document.getElementById("txtNum").value = "";   
-    Total = 0;
+    document.getElementById("txtNum").value = "";
+    number1 = 0;
+    number2 = 0;
 }
 
 function Addition() {
-    if(Total==0){
-        Total = Number(document.getElementById("txtNum").value);  
+    if (number1 == 0) {
+        number1 = Number(document.getElementById("txtNum").value);
     }
-    else{
-        Total += Number(document.getElementById("txtNum").value);  
+    else if (number2 == 0) {
+        number2 = Number(document.getElementById("txtNum").value);
     }
-    document.getElementById("txtNum").value="";
-    finalAction="Add"; 
-    
+    else {
+        number1 = number1 + number2;
+        number2 = Number(document.getElementById("txtNum").value);
+    }
+    document.getElementById("txtNum").value = "";
+    finalAction = "Add";
+
 }
 
 function Substraction() {
-    if(Total==0){
-        Total = Number(document.getElementById("txtNum").value);  
+    if (number1 == 0) {
+        number1 = Number(document.getElementById("txtNum").value);
     }
-    else{
-        Total -= Number(document.getElementById("txtNum").value);  
+    else if (number2 == 0) {
+        number2 = Number(document.getElementById("txtNum").value);
     }
-    document.getElementById("txtNum").value="";
-    finalAction="sub"; 
+    else {
+        number1 = number1 - number2;
+        number2 = Number(document.getElementById("txtNum").value);
+    }
+    document.getElementById("txtNum").value = "";
+    finalAction = "sub";
 }
 
 function Devide() {
-    if(Total==0){
-        Total = Number(document.getElementById("txtNum").value);  
+    if (number1 == 0) {
+        number1 = Number(document.getElementById("txtNum").value);
     }
-    else{
-        Total /= Number(document.getElementById("txtNum").value);  
+    else if (number2 == 0) {
+        number2 = Number(document.getElementById("txtNum").value);
     }
-    document.getElementById("txtNum").value="";
-    finalAction="div"; 
+    else {
+        number1 = number1 / number2;
+        number2 = Number(document.getElementById("txtNum").value);
+    }
+    document.getElementById("txtNum").value = "";
+    finalAction = "div";
 }
 
 function Multiply() {
-    if(Total==0){
-        Total = Number(document.getElementById("txtNum").value);  
+    if (number1 == 0) {
+        number1 = Number(document.getElementById("txtNum").value);
     }
-    else{
-        Total *= Number(document.getElementById("txtNum").value);  
+    else if (number2 == 0) {
+        number2 = Number(document.getElementById("txtNum").value);
     }
-    document.getElementById("txtNum").value="";
-    finalAction="mul";   
+    else {
+        number1 = number1 * number2;
+        number2 = Number(document.getElementById("txtNum").value);
+    }
+    document.getElementById("txtNum").value = "";
+    finalAction = "mul";
 }
 
-function Equeals(){
-    if(finalAction=="Add"){
-        Total += Number(document.getElementById("txtNum").value);
-        document.getElementById("txtNum").value=Total;
+function Equeals() {
+    let total;
+    number1 = number1 + number2;
+    number2 = Number(document.getElementById("txtNum").value);
+
+    if (finalAction == "Add") {
+        total = number1 + number2;
     }
-    else if(finalAction=="sub"){
-        Total -= Number(document.getElementById("txtNum").value);
-        document.getElementById("txtNum").value=Total;
+    else if (finalAction == "sub") {
+        total = number1 - number2;
     }
-    else if(finalAction=="div"){
-        Total /= Number(document.getElementById("txtNum").value);
-        document.getElementById("txtNum").value=Total;
+    else if (finalAction == "div") {
+        total = number1 / number2;
     }
-    else if(finalAction=="mul"){
-        Total *= Number(document.getElementById("txtNum").value);
-        document.getElementById("txtNum").value=Total;
-    }
-    else{
-        document.getElementById("txtNum").value=Total;
+    else if (finalAction == "mul") {
+        total = number1 * number2;
     }
 
-    
+    document.getElementById("txtNum").value = total;
+    number1 = 0;
+    number2 = 0;
+
 }
 
