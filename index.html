@@ -11,36 +11,97 @@
 <body>
 
     <div class="container-fluid  ">
-        <div class="col-7 mt-5 " style="margin-left: auto; margin-right: auto;">
-            <h3 class="text-center ">Camculator</h3>
-            <div class="row g-3 align-items-center m-1 ">
-                <div class="col-auto">
-                    <label for="inputPassword6" class="col-form-label">input numeber 1</label>
+        <div class="col-4 mt-5 col-sm-12 col-xs-12" style="margin-left: auto; margin-right: auto;">
+            <h1 class="text-center ">Camculator</h2>
+
+            <div class="textArea" style=" width: 180px; margin-left: auto; margin-right: auto; ">
+                <div class="row g-3 align-items-center m-1 ">
+                    <div class="col-auto">
+                        <label for="inputPassword6" class="col-form-label">num 1</label>
+                    </div>
+                    <div class="col-7">
+                        <input type="text" id="txtNum1" class="form-control" aria-describedby="passwordHelpInline">
+                    </div>
+                    
                 </div>
-                <div class="col-auto">
-                    <input type="text" id="txtNum1" class="form-control" aria-describedby="passwordHelpInline">
-                </div>
-                
+        
+                <div class="row g-3 align-items-center m-1 ">
+                    <div class="col-auto">
+                        <label for="inputPassword6" class="col-form-label">num 2</label>
+                    </div>
+                    <div class="col-7">
+                        <input type="text" id="txtNum2" class="form-control" aria-describedby="passwordHelpInline">
+                    </div>
+                    
+                </div>    
             </div>
-    
-            <div class="row g-3 align-items-center m-1">
-                <div class="col-auto">
-                    <label for="inputPassword6" class="col-form-label">input numeber 2</label>
+            
+            <div class="row mt-4" style="width: 180px; margin-left: auto; margin-right: auto; ">
+                <div class="col-3">
+                    <button type="button" onclick="seven()" class="btn btn-primary">7</button>
                 </div>
-                <div class="col-auto">
-                    <input type="text" id="txtNum2" class="form-control" aria-describedby="passwordHelpInline">
+                <div class="col-3">
+                    <button type="button" onclick="eight()" class="btn btn-primary">8</button>
                 </div>
+                <div class="col-3">
+                    <button type="button" onclick="nine()" class="btn btn-primary">9</button>
+                </div>
+                <div class="col-3">
+                    <button type="button" onclick="Devide()" class="btn btn-primary">/</button>
+                </div>                
+            </div>
 
-                <div class="col mt-4 ">
-                    <button type="button" onclick="Addition()" class="btn btn-primary">Addition</button>
-                    <button type="button" onclick="Substraction()" class="btn btn-primary">Substraction</button>
-                    <button type="button" onclick="Devide()" class="btn btn-primary">Devide</button>
-                    <button type="button" onclick="Multiply()" class="btn btn-primary">Multiply</button>
+            <div class="row mt-4" style="width: 180px; margin-left: auto; margin-right: auto; ">
+                <div class="col-3">
+                    <button type="button" onclick="fore()" class="btn btn-primary">4</button>
                 </div>
+                <div class="col-3">
+                    <button type="button" onclick="five()" class="btn btn-primary">5</button>
+                </div>
+                <div class="col-3">
+                    <button type="button" onclick="six()" class="btn btn-primary">6</button>
+                </div>
+                <div class="col-3">
+                    <button type="button" onclick="Multiply()" class="btn btn-primary">x</button>
+                </div>                
+            </div>
 
+            <div class="row mt-4" style="width: 180px; margin-left: auto; margin-right: auto; ">
+                <div class="col-3">
+                    <button type="button" onclick="one()" class="btn btn-primary">1</button>
+                </div>
+                <div class="col-3">
+                    <button type="button" onclick="two()" class="btn btn-primary">2</button>
+                </div>
+                <div class="col-3">
+                    <button type="button" onclick="three()" class="btn btn-primary">3</button>
+                </div>
+                <div class="col-3">
+                    <button type="button" onclick="Addition()" class="btn btn-primary">+</button>
+                </div>                
+            </div>
+
+            <div class="row mt-4" style="width: 180px; margin-left: auto; margin-right: auto; ">
+                <div class="col-3">
+                    <button type="button" onclick="one()" class="btn btn-primary">C</button>
+                </div>
+                <div class="col-3">
+                    <button type="button" onclick="two()" class="btn btn-primary">0</button>
+                </div>
+                <div class="col-3">
+                    <button type="button" onclick="three()" class="btn btn-primary">.</button>
+                </div>
+                <div class="col-3">
+                    <button type="button" onclick="Addition()" class="btn btn-primary">=</button>
+                </div>                
+            </div>
+
+            
+            <div class="row mt-4 " style="width: fit-content; margin-left: auto; margin-right: auto;">
                 <label for="inputPassword6" id="Output" class="col-form-label"></label>
-                
             </div>
+            
+            
         </div>
     </div>
 

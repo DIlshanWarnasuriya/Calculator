@@ -16,3 +16,4 @@ function Devide(){
 function Multiply(){
     document.getElementById("Output").innerHTML="Output is - " + x + " * " + y + " = "+ (x*y);
 }
+
