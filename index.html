@@ -10,87 +10,51 @@
 </head>
 
 <body>
-
     <div class="container">
-        <h1 class="text-center ">Calculator</h2>
-            <div class="col-4 mt-5 col-sm-12 col-xs-12" style="margin-left: auto; margin-right: auto;">
-                <div class="textArea" style=" width: 180px; margin-left: auto; margin-right: auto; ">
-                    <input type="text" id="txtNum" class="form-control" aria-describedby="passwordHelpInline">
+        <div class="hedding">
+            <h1>Calculator </h2>
+        </div>
 
-                </div>
+        <div class="textArea" style="  margin-left: auto; margin-right: auto; ">
+            <input type="text" id="txtNum" class="form-control" aria-describedby="passwordHelpInline" placeholder="0">
+        </div>
+
+        <div class="buttonarea">
+            <div class="col">
+                <button type="button" onclick="Clear()" class="btnActionClear">CLEAR</button>
+                <button type="button" onclick="Devide()" class="btnCalculate">/</button>
             </div>
 
+            <div class="col">
+                <button type="button" onclick="seven()" class="btnNumber">7</button>
+                <button type="button" onclick="eight()" class="btnNumber">8</button>
+                <button type="button" onclick="nine()" class="btnNumber">9</button>
+                <button type="button" onclick="Multiply()" class="btnCalculate">x</button>
 
-            <div class="row mt-4" style="width: 180px; margin-left: auto; margin-right: auto; ">
-                <div class="col-3">
-                    <button type="button" onclick="seven()" class="btn btn-primary">7</button>
-                </div>
-                <div class="col-3">
-                    <button type="button" onclick="eight()" class="btn btn-primary">8</button>
-                </div>
-                <div class="col-3">
-                    <button type="button" onclick="nine()" class="btn btn-primary">9</button>
-                </div>
-                <div class="col-3">
-                    <button type="button" onclick="Devide()" class="btn btn-primary">/</button>
-                </div>
             </div>
 
-            <div class="row mt-4" style="width: 180px; margin-left: auto; margin-right: auto; ">
-                <div class="col-3">
-                    <button type="button" onclick="fore()" class="btn btn-primary">4</button>
-                </div>
-                <div class="col-3">
-                    <button type="button" onclick="five()" class="btn btn-primary">5</button>
-                </div>
-                <div class="col-3">
-                    <button type="button" onclick="six()" class="btn btn-primary">6</button>
-                </div>
-                <div class="col-3">
-                    <button type="button" onclick="Multiply()" class="btn btn-primary">x</button>
-                </div>
+            <div class="col">
+                <button type="button" onclick="fore()" class="btnNumber">4</button>
+                <button type="button" onclick="five()" class="btnNumber">5</button>
+                <button type="button" onclick="six()" class="btnNumber">6</button>
+                <button type="button" onclick="Substraction()" class="btnCalculate">-</button>
             </div>
 
-            <div class="row mt-4" style="width: 180px; margin-left: auto; margin-right: auto; ">
-                <div class="col-3">
-                    <button type="button" onclick="one()" class="btn btn-primary">1</button>
-                </div>
-                <div class="col-3">
-                    <button type="button" onclick="two()" class="btn btn-primary">2</button>
-                </div>
-                <div class="col-3">
-                    <button type="button" onclick="three()" class="btn btn-primary">3</button>
-                </div>
-                <div class="col-3">
-                    <button type="button" onclick="Addition()" class="btn btn-primary">+</button>
-                </div>
+            <div class="col">
+                <button type="button" onclick="one()" class="btnNumber">1</button>
+                <button type="button" onclick="two()" class="btnNumber">2</button>
+                <button type="button" onclick="three()" class="btnNumber">3</button>
+                <button type="button" onclick="Addition()" class="btnCalculate">+</button>
             </div>
 
-            <div class="row mt-4" style="width: 180px; margin-left: auto; margin-right: auto; ">
-                <div class="col-3">
-                    <button type="button" onclick="Clear()" class="btn btn-primary">C</button>
-                </div>
-                <div class="col-3">
-                    <button type="button" onclick="zero()" class="btn btn-primary">0</button>
-                </div>
-                <div class="col-3">
-                    <button type="button" onclick="dote()" class="btn btn-primary">.</button>
-                </div>
-                <div class="col-3">
-                    <button type="button" onclick="Equeals()" class="btn btn-primary">=</button>
-                </div>
+            <div class="col">
+                <button type="button" onclick="zero()" class="btnzero">0</button>
+                <button type="button" onclick="dote()" class="btnNumber">.</button>
+                <button type="button" onclick="Equeals()" class="btnCalculate">=</button>
             </div>
-
-
-            <div class="row mt-4 " style="width: fit-content; margin-left: auto; margin-right: auto;">
-                <label for="inputPassword6" id="Output" class="col-form-label"></label>
-            </div>
-
-
+        </div>
     </div>
     </div>
-
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="app.js"></script>

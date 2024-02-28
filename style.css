@@ -1,9 +1,96 @@
 .container {
-    width: 250px;
+    width: 260px;
+    height: 480px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 20px;
     box-shadow: 10px 10px 15px black;
     padding-top: 20px;
     margin-top: 100px;
+    background-color: black;
+}
+
+.hedding {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+#txtNum {
+    height: 100px;
+    font-size: 50px;
+    text-align: right;
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+.buttonarea {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+
+.btnNumber {
+    width: 50px;
+    height: 50px;
+    background-color: #333333;
+    border-radius: 50%;
+    margin-top: 5px;
+    margin-left: 1px;
+    margin-right: 1px;
+    border: none;
+    color: white;
+    font-size: 25px;
+}
+
+.btnzero {
+    width: 106px;
+    height: 50px;
+    background-color: #333333;
+    border-radius: 50px;
+    margin-top: 5px;
+    margin-left: 1px;
+    margin-right: 1px;
+    border: none;
+    color: white;
+    font-size: 25px;
+}
+
+.btnCalculate {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-top: 5px;
+    margin-left: 1px;
+    margin-right: 1px;
+    border: none;
+    background-color: #ff9e1f;
+    color: white;
+    font-size: 20px;
+}
+
+.btnAction {
+    width: 50px;
+    height: 50px;
+    background-color: #a5a5a5;
+    border-radius: 50%;
+    margin-top: 5px;
+    margin-left: 1px;
+    margin-right: 1px;
+    border: none;
+}
+
+.btnActionClear {
+    width: 162px;
+    height: 45px;
+    background-color: #a5a5a5;
+    border-radius: 50px;
+    margin-top: 5px;
+    margin-left: 1px;
+    margin-right: 1px;
+    border: none;
+    font-size: 20px;
 }
